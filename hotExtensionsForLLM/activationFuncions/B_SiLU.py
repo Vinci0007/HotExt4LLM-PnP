@@ -1,6 +1,6 @@
 
 # import tensorflow as tf
-import torch as tf
+import torch as t
 
 # alpha = 1.6732632423543772848170429916717
 alpha: float = 1.67
@@ -18,7 +18,7 @@ def sigma(x):
     """
     Sigmoid avtivation function.
     """
-    S = 1 / (1 + tf.exp(-x))
+    S = 1 / (1 + t.exp(-x))
     return S
 
 def BSiLU(x):
