@@ -1,7 +1,7 @@
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
+import torch    # type: ignore
+import torch.nn as nn   # type: ignore
+import torch.nn.functional as F   # type: ignore
 
 class PnPNystromAttention(nn.Module):
     def __init__(self, dim, num_heads=8, num_landmarks=64):

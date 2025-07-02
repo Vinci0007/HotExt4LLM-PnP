@@ -1,5 +1,5 @@
 
-# import torch as t
+import torch as t   # type: ignore
 
 __doc__ = """
 This is the implementation of the NeLU activation function.
@@ -12,14 +12,14 @@ Bounded Sigmoid Linear Unit (NeLU)
 
 alpha: float = 0.2
 
-def NeLU(x):
+def NeLU(x: t.Tensor) -> t.Tensor:
     """
     This is the implementation of the NeLU activation math function.
     """
     return x * (x > 0) + (-alpha / (1 + x ** 2)) * (x < 0)
 
 
-def NeLU_derivative(x):
+def NeLU_derivative(x: t.Tensor) -> t.Tensor:
     """
     This is the implementation of the NeLU activation derivative function.
     """
