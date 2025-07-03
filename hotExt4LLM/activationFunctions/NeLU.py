@@ -1,5 +1,5 @@
 
-import torch as t   # type: ignore
+import torch as t   
 
 __doc__ = """
 This is the implementation of the NeLU activation function.

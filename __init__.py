@@ -4,6 +4,13 @@ from .hotExt4LLM import (
     PnPNystromAttention
 )
 
+__all__ = [
+    'BSiLU', 'BSiLU_derivative',
+    'NeLU', 'NeLU_derivative',
+
+    'PnPNystromAttention'
+    ]
+
 
 __package__ = 'hotExt4LLM'
 __author__ = 'Tourist Chen'
@@ -15,9 +22,3 @@ __doc__ = """
 These are 'PnP' modules, include 'Activation Functions' and 'Attention Functions' and so on.
 """
 
-__all__ = [
-    'BSiLU', 'BSiLU_derivative',
-    'NeLU', 'NeLU_derivative',
-
-    'PnPNystromAttention'
-    ]

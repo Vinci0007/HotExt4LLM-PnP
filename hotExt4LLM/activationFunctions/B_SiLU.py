@@ -1,6 +1,6 @@
 
 # import tensorflow as tf
-import torch as t   # type: ignore
+import torch as t  
 
 # alpha = 1.6732632423543772848170429916717
 alpha: float = 1.67
